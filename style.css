@@ -19,6 +19,7 @@ html {
 .header{
     width: 100%;
     background-color:#0f172a;
+    position: fixed;
 }
 
 .navbar{
@@ -28,6 +29,7 @@ html {
     align-items: center;
     padding: 15px 20px;
     position: relative;
+
    
 }
 
@@ -36,7 +38,7 @@ html {
     font-size: 0.9rem;
     text-decoration: none;
     font-weight: bold;
-    padding: 30px 10px;
+    padding: 30px 70px;
 }
 
 .menu{
@@ -71,6 +73,7 @@ html {
     gap: 20px;
 }
 
+/*responsive design for header*/
 
 @media (max-width: 768px) {
     .menu ul {
@@ -126,6 +129,9 @@ html {
         font-size: 1.2rem;
     }
 }
+
+
+
 
 /*home section*/
 
@@ -200,6 +206,9 @@ html {
     display: block;
     justify-content: center;
 }
+
+
+/*responsive design for homepage*/
 
 @media (max-width: 767px) {
     .home-section {
@@ -303,148 +312,84 @@ html {
 }
 
 
+/*About section*/
+
 .about-section {
     width: 100%;
     min-height: 100vh;
     background-color: thistle;
-    display: grid;
-    grid-template-columns: 1.6fr 0.4fr;
-    gap: 50px;
-    padding: 80px 60px;
-    justify-content: center;
-}
 
-.about-services {
     display: flex;
-    flex-direction: column;
-    gap: 100px;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    transform: translateY(200px);
-}
-
-.about-services h3 {
-    font-size: 40px;
+    padding: 80px 80px;
 }
 
 .about-content-wrapper {
+    width: 100%;
+    max-width: 1000px;
+
     display: flex;
     flex-direction: column;
-    gap: 60px;
-    justify-content: center;
-    transform: translateX(50px);
-}
-.about-content  {
-    justify-content: center;
-    align-items: center;
-    transform: translateY(50px);
+    gap: 80px;
 }
 
 .about-content h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
 }
 
 .about-content p {
-    font-size: 25px;
-    transform: translateY(20px);
-}
-
-
-.about-top {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: start;
-}
-
-.about-left {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-}
-
-.about-left h2 {
-    font-size: 4.5rem;
-}
-
-.about-right h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.about-right p {
-    font-size: 3.3rem;
-    line-height: 1.8;
-    text-align: justify;
+    font-size: 1.4rem;
+    line-height: 2.8;
+    max-width: 900px;
 }
 
 .about-bottom {
     display: grid;
-    grid-template-columns: rows;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin-top: auto;
-    
 }
 
 .about-bottom .box {
     background-color: thistle;
-    padding: 30px;
-    border-radius: 10px;
     border: 3px solid #0f172a;
+    border-radius: 10px;
+
+    padding: 30px;
     text-align: center;
-    font-weight: bold;
+
     transition: 0.3s;
-    transform: translateY(90px);
 }
 
-.box h3 {
-    font-size: 25px;
-   text-decoration: underline;
-
+.about-bottom .box:hover {
+    transform: translateY(-10px);
 }
 
-.box p {
-    font-size: 20px;
+/*responsive design for about section*/
 
-}
-
-/* MOBILE */
 @media (max-width: 767px){
 
     .about-section {
-        grid-template-columns: 1fr;
         padding: 60px 20px;
-        gap: 40px;
-    }
-
-    .about-services {
-        gap: 40px;
-        transform: translateY(200px);
-        text-align: center;
-    }
-
-    .about-services h3 {
-        font-size: 1.8rem;
     }
 
     .about-content-wrapper {
-        gap: 40px;
-        transform: translateX(-20px);
+        gap: 50px;
     }
 
     .about-content {
-        transform: translateY(0);
         text-align: center;
     }
 
     .about-content h2 {
         font-size: 2rem;
+        margin-bottom: 15px;
     }
 
     .about-content p {
         font-size: 1.1rem;
-        transform: translateY(10px);
-        text-align: center;
+        line-height: 1.7;
     }
 
     .about-bottom {
@@ -453,8 +398,7 @@ html {
     }
 
     .about-bottom .box {
-        transform: translateY(40px, -10px);
-        padding: 40px;
+        padding: 20px;
     }
 
     .box h3 {
@@ -467,31 +411,14 @@ html {
 }
 
 
-/* SMALL TABLET */
 @media (min-width: 768px) and (max-width: 900px){
 
     .about-section {
-        grid-template-columns: 1fr;
         padding: 70px 40px;
-        gap: 50px;
-    }
-
-    .about-services {
-        gap: 60px;
-        transform: translateY(50px);
-    }
-
-    .about-services h3 {
-        font-size: 2.2rem;
     }
 
     .about-content-wrapper {
-        transform: translateX(0);
-        gap: 50px;
-    }
-
-    .about-content {
-        transform: translateY(20px);
+        gap: 60px;
     }
 
     .about-content h2 {
@@ -499,7 +426,8 @@ html {
     }
 
     .about-content p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        line-height: 1.8;
     }
 
     .about-bottom {
@@ -508,7 +436,7 @@ html {
     }
 
     .about-bottom .box {
-        transform: translateY(30px);
+        padding: 25px;
     }
 
     .box h3 {
@@ -520,91 +448,84 @@ html {
     }
 }
 
-/* LARGE TABLET */
+
 @media (min-width: 901px) and (max-width: 1024px){
 
     .about-section {
-        grid-template-columns: 1fr 1fr;
         padding: 80px 50px;
-        gap: 40px;
-    }
-
-    .about-services {
-        gap: 70px;
-        transform: translateY(80px);
-    }
-
-    .about-services h3 {
-        font-size: 2rem;
     }
 
     .about-content-wrapper {
-        transform: translateX(20px);
-    }
-
-    .about-content {
-        transform: translateY(20px);
+        gap: 70px;
     }
 
     .about-content h2 {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
     }
 
     .about-content p {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        line-height: 1.8;
     }
 
     .about-bottom {
         grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
     }
 
     .about-bottom .box {
-        transform: translateY(40px);
-        padding: 25px;
+        padding: 28px;
     }
 
     .box h3 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .box p {
-        font-size: 1rem;
+        font-size: 1.15rem;
     }
 }
 
-/* SMALL DESKTOP */
+
 @media (min-width: 1025px) and (max-width: 1200px){
 
     .about-section {
         padding: 80px 60px;
-        gap: 50px;
-    }
-
-    .about-services {
-        transform: translateY(120px);
-    }
-
-    .about-services h3 {
-        font-size: 2.2rem;
     }
 
     .about-content-wrapper {
-        transform: translateX(30px);
+        gap: 80px;
+    }
+
+    .about-content h2 {
+        font-size: 2.7rem;
     }
 
     .about-content p {
-        font-size: 1.4rem;
+        font-size: 1.35rem;
+        line-height: 1.9;
+    }
+
+    .about-bottom {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
     }
 
     .about-bottom .box {
-        transform: translateY(50px);
+        padding: 30px;
+    }
+
+    .box h3 {
+        font-size: 1.7rem;
+    }
+
+    .box p {
+        font-size: 1.2rem;
     }
 }
 
 
-
-
-
+/*experince section*/
 
 .experience-section {
     width: 100%;
@@ -668,6 +589,7 @@ html {
     color: #0f172a;
 }
 
+/*responsive design for skills section*/
 
 @media (max-width: 767px){
 
@@ -767,13 +689,7 @@ html {
     }
 }
 
-
-
-
-
-
-
-
+/*projects section*/
 
 .projects-section {
     width: 100%;
@@ -798,6 +714,8 @@ html {
     font-size: 1.5rem;
 
 }
+
+/*responsive design for the project design*/
 
 @media (max-width: 767px) {
     .projects-section h1 {
@@ -845,6 +763,7 @@ html {
  
 }
 
+ /*contact section*/
 
 .contact-section {
     width: 100%;
@@ -899,6 +818,8 @@ html {
     transform: translateY(-10px);
     transition: 0.5s;
 }
+
+/*responsive design for contact section*/
 
 @media (max-width: 767px){
 
@@ -969,3 +890,36 @@ html {
     }
 }
 
+
+
+/*footer*/
+
+footer {
+    width: 100%;
+    background-color: #020617;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+footer p {
+    color: thistle;
+    font-size: 1rem;
+}
+
+@media (max-width: 767px){
+
+    footer {
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+/*End of my first website portfolio (CSS)*/
