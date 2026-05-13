@@ -14,6 +14,8 @@
                 <a href="#home">Rennlyne Simiyu</a>
             </div>
 
+          <div class="hamburger"> &#9776;</div>
+
           <div class="menu">
                  <ul>
                     <li><a href="#home" class="active">Home</a></li>
@@ -22,6 +24,7 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                  </ul>
+
           </div>
 
         </nav>
@@ -48,34 +51,23 @@
         </section>
 
 
-<section class="solutions">
-     <ul class="solutions-list">
-        <li>Responsive Websites</li>
-        <li>Landing Pages</li>
-        <li>Interactive UI</li>
-        <li>Portfolio Sites</li>
-     </ul>
+<section class="about-section" id="about">
 
-</section>
-
-
-<section class="about" id="about">
-
-    <div class="about_top">
+    <div class="about-top">
 
      <div class="about-services">
             <h3>Web Development</h3>
             <h3>App Development</h3>
             <h3>Website Hosting</h3>
      </div>
-
+     <div class="about-content-wrapper">
      <div class="about-content">
            <h2>About Me</h2>
            <p>I started my software journey from creative design and have come to love the process of creating from scratch. Since then, this has led me to develop software as it fulfills my passion and love for building things and solving problems</p>
      </div>
     
     
-     <div class="about_bottom">
+     <div class="about-bottom">
         <div class="box">
             <h3>Experience</h3>
             <p>Professionally untested,dangerously curious</p>
@@ -90,14 +82,14 @@
             <h3>Hackathon</h3>
             <p>Attended one so far</p>
         </div>
-     
+      </div>
       </div>
     
     </div>
 </section>
 
 
-<section class ="experienceSection" id="experience">
+<section class ="experience-section" id="experience">
     <div class="experiencecontent">
         <h1>Experience</h1>
         <p>Took part in a hackathon as a solo participant, independently developing a working prototype under strict time constraints while improving my problem-solving and web development skills.</p>
@@ -116,14 +108,14 @@
 </section>
 
 
-<section class ="ProjectsSection" id="projects">
+<section class ="projects-section" id="projects">
         <h1>Upcoming Projects</h1>
         <p>New projects coming soon!<br>This website portfolio is actually among the first projects</p>
 
 </section>
 
 
-<section class = "ContactSection" id="contact">
+<section class = "contact-section" id="contact">
         <h1>Let's keep in touch</h1>
            <p>
             Feel free to reach out to me anytime!
@@ -143,8 +135,20 @@
  
 
 <footer>
-    <p>&copy; 2024 Rennlyne Simiyu. All rights reserved.</p>
+    <p>&copy; 2026 Rennlyne Simiyu. All rights reserved.</p>
 </footer>
+
+<script>
+
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".menu");
+
+hamburger.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+
+</script>
+
 
 </body>
 </html>
