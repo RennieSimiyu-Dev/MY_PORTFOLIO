@@ -5,13 +5,12 @@
 }
 
 body{
-    margin: 0;
-    overflow-x: hidden;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    
 }
 
 .LandingPage {
@@ -146,6 +145,7 @@ ul li a {
     border-radius: 50%;
     border: 5px solid thistle;
     transform: translate(-100px, 40px);
+    float: right;
 }
 
 .Solutions {
@@ -645,3 +645,5 @@ ul li a {
         gap: 15px;
     }
 }
+
+

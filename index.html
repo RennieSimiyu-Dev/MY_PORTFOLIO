@@ -8,11 +8,11 @@
 
 </head>
 <body>
-    <div class="LandingPage" id="home">
-        <div class="navbar">
-           <div class="logo">
-              <h2 class="logo">Rennlyne Simiyu</h2>
-           </div>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home">Rennlyne Simiyu</a>
+            </div>
 
           <div class="menu">
                  <ul>
@@ -23,51 +23,56 @@
                     <li><a href="#contact">Contact</a></li>
                  </ul>
           </div>
-        </div>
-    
-    <div class="hero_section">
 
-      <div class="LandingPageContent">
-        <h3 class="greeting">Hello</h3>
-        <h2 class="name">I'm Rennlyne Simiyu</h2>
-        <h1 class="title">A Web Developer</h1>
-      
+        </nav>
+    </header>
 
-      <div class="buttons">
-        <a href="#contact" class="btn1">Got a Project</a>
-        <a href="RENNLYNE SIMIYU CV.pdf" class="btn2" target="_blank">View CV</a>
-      </div>
 
-     </div>
-        <div class="hero_image">
-           <img src="Rennie.jpg" alt="Profile Photo">
-        </div>
-    </div>
-   
+    <main>
+        <section id="home" class="home-section">
+            <div class="home-content">
+                <h3 class="greeting">Hello</h3>
+                <h2 class="name">I'm Rennlyne Simiyu</h2>
+                <h1 class="title">A Web Developer</h1>
+            
+              <div class="buttons">
+                 <a href="#contact" class="btn1">Got a Project</a>
+                 <a href="RENNLYNE SIMIYU CV.pdf" class="btn2" target="_blank">View CV</a>
+              </div>
+            </div>
 
-<div class="Solutions">
-    <span>Responsive Websites</span>
-    <span>Landing Pages</span>
-    <span>Interctive UI</span>
-    <span>Portfolio Sites</span>
+            <div class="home-image">
+                <img src="Rennie.jpg" alt="Profile Photo">
+            </div>
 
-</div>
+        </section>
 
-</div>  
 
-    <div class="AboutSection" id="about">
+<section class="solutions">
+     <ul class="solutions-list">
+        <li>Responsive Websites</li>
+        <li>Landing Pages</li>
+        <li>Interactive UI</li>
+        <li>Portfolio Sites</li>
+     </ul>
+
+</section>
+
+
+<section class="about" id="about">
 
     <div class="about_top">
-     <div class="about_left">
-            <h2>Web Development</h2>
-            <h2>App Development</h2>
-            <h2>Website Hosting</h2>
+
+     <div class="about-services">
+            <h3>Web Development</h3>
+            <h3>App Development</h3>
+            <h3>Website Hosting</h3>
      </div>
 
-     <div class="about_right">
+     <div class="about-content">
            <h2>About Me</h2>
            <p>I started my software journey from creative design and have come to love the process of creating from scratch. Since then, this has led me to develop software as it fulfills my passion and love for building things and solving problems</p>
-    
+     </div>
     
     
      <div class="about_bottom">
@@ -85,12 +90,14 @@
             <h3>Hackathon</h3>
             <p>Attended one so far</p>
         </div>
-     </div>
-    </div>
-    </div>
-    </div>
+     
+      </div>
     
-<div class ="ExperienceSection" id="experience">
+    </div>
+</section>
+
+
+<section class ="experienceSection" id="experience">
     <div class="experiencecontent">
         <h1>Experience</h1>
         <p>Took part in a hackathon as a solo participant, independently developing a working prototype under strict time constraints while improving my problem-solving and web development skills.</p>
@@ -104,16 +111,19 @@
         <div class="box">JAVASCRIPT</div>
         <div class="box">PYTHON</div>
      </div> 
+    
     </div>
-</div>
+</section>
 
-    <div class ="ProjectsSection" id="projects">
+
+<section class ="ProjectsSection" id="projects">
         <h1>Upcoming Projects</h1>
         <p>New projects coming soon!<br>This website portfolio is actually among the first projects</p>
 
-    </div>
+</section>
 
-    <div class = "ContactSection" id="contact">
+
+<section class = "ContactSection" id="contact">
         <h1>Let's keep in touch</h1>
            <p>
             Feel free to reach out to me anytime!
@@ -127,7 +137,14 @@
                 <a href="#contact">X</a>
              
             </div>
-    </div>
-    
+</section>
+
+</main>
+ 
+
+<footer>
+    <p>&copy; 2024 Rennlyne Simiyu. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
